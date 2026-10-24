@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chronicles of the Realm</title>
-    <link rel="stylesheet" href="home.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 🌟 Colorful Neon Retro Title Screen UI Overlay -->
-    <div id="main-menu">
+    <!-- 🟢 FIXED MENU OVERLAY CONTROLLER -->
+    <div id="main-menu" onclick="this.style.opacity='0'; setTimeout(()=>{this.style.display='none'},400);">
         <div class="menu-box">
             <h1 class="game-title">CHRONICLES<br><span class="subtitle">OF THE REALM</span></h1>
             
             <div class="pulse-container">
-                <p class="menu-hint">CLICK ANYWHERE OR PRESS ANY KEY TO START</p>
+                <p class="menu-hint">CLICK HERE WITH YOUR MOUSE TO START</p>
             </div>
 
             <div class="controls-guide">
-                <div class="guide-row"><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> <span class="action-text">Explore Land</span></div>
-                <div class="guide-row"><span class="key">SPACE</span> <span class="action-text">Melee Steel Blade</span></div>
-                <div class="guide-row"><span class="key">SHIFT</span> <span class="action-text">Ice Spell Cast</span></div>
+                <div class="guide-row"><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> <span class="action-text">Explore 5 Areas</span></div>
+                <div class="guide-row"><span class="key">SPACE</span> <span class="action-text">Attack / Swing Weapon</span></div>
+                <div class="guide-row">
+                    <span class="key">1</span> Sword 
+                    <span class="key">2</span> Staff 
+                    <span class="key">3</span> Hammer
+                </div>
             </div>
         </div>
     </div>
@@ -30,8 +33,7 @@
         <canvas id="gameCanvas"></canvas>
     </div>
 
-    
-    <script src="home.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
+ 
